@@ -68,3 +68,15 @@ in non_local_problem define this after iteration
     plt.gcf().set_dpi(100)
     plt.show()
 """
+
+
+
+""" with open('iteration_errors.csv', mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['Iteration', 'Max Absolute Error'])
+        #for i, error in iteration_errors:
+        #    writer.writerow([i, error])
+        writer.writerow(iteration_errors[0])
+        writer.writerow(iteration_errors[1000])
+        writer.writerow((['Sufficient iteration', 'Min Absolute Error']))
+        writer.writerow([min_error_iteration, min_error])"""
