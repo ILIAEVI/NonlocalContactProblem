@@ -1,2 +1,3 @@
-Nonlocal Contact Problem for Second Order Ordinary Differential Equation 
-with Constant Coefficients
+## Nonlocal Contact Problem for Second Order Differential Equation with Constant Coefficients
+
+This repository contains implementations for non-local boundary contact problems involving both second-order ordinary differential equations (ODEs) and two-dimensional linear elliptic partial differential equations (PDEs). The solutions are obtained using an iteration method that reduces the non-local problem to a sequence of classical boundary value problems. These problems are then solved numerically using the finite difference method.
