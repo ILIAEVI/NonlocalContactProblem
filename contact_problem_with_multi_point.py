@@ -121,7 +121,7 @@ def non_local_contact_problem_iteration(nodes, u_1, u_2, f_1, f_2, k, h):
     # define gama_1 and gama_2 for nonlocal contact boundary condition
     # gama_1 + gama_2 < 1, gama_1 > 0 and gama_2 > 0
     gama_i = [0.2, 0.3, 0.1]
-    gama_j = [0.1, 0.1, 0.5, 0.1]
+    gama_j = [0.1, 0.1, 0.1, 0.1]
     # n must be 5, nodes= [0, 0.25, 0.5, 0.75, 1]
     n = len(nodes)
     # f_0 is necessary to make sure that the contact condition is correct
@@ -180,8 +180,8 @@ def non_local_contact_problem_iteration(nodes, u_1, u_2, f_1, f_2, k, h):
         approximations.append(y)
         iteration_errors.append((i+1, max_absolute_error))
         print(f"iteration: {i+1}, maximum absolute error:{max_absolute_error}")
-       # update_plot(full_nodes, exact_solution, y, i, h)
-    #plot_iteration_errors(iteration_errors, h)
+        #update_plot(full_nodes, exact_solution, y, i, h)
+    plot_iteration_errors(iteration_errors, h)
     min_error = min(errors)
     min_error_iteration = errors.index(min_error) + 1
     print(f"absolute error was minimal {min_error} at iteration {min_error_iteration}, ")
